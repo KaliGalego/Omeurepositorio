@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="formulario acceso a la pagina principal curso html de Pablo Abalo">
+<meta name="keywords" content="formulario, radio, email,multiplos de cinco">
+<meta name="author" content="Pablo Abalo">
+<meta name="copyright" content="propiedad de Pablo ltd. todos los derechos reservados @2022">
+<meta name="robots" content="noindex">
+<title>Página con formulario</title>
+<style>
+  p{
+  color:blue;
+  text-indent:0.8em;
+  }
+  .grande{
+  
+  position:relative;
+  margin-left:auto;
+  }
+</style>
+</head>
+<body>
+<aside>
+<p>Hola, este parrafo corresponde ao aside.</p>
+<p class="grande" >Hola de novo, este parrafo tamen corresponde ao aside. Jokin ten fame.</p>
+</aside>
+
+<section>
+<form name="miformulario" id="miformulario" method="get" autocomplete="off" >
+<datalist id="telefonos">
+<option value="589899330" label="   telefono1">
+<option value="58984320" label="   telefono2">
+<option value="589843323" label="   telefono3">
+</datalist>
+
+Nombre:&nbsp;<input type="text" name="texto" id="texto" required> <br/><br/>
+Pasword:&nbsp;<input type="password" name="contraseña" id="contraseña"> <br/><br>
+Email:&nbsp;<input type="email" name="emilio" id="emilio"><br/><br/>
+Buscar:&nbsp;<input type="search" name="busqueda" id="busqueda"><br/><br/>
+URL:&nbsp;<input type="url" name="url" id="url"> <br><br>
+Edad:&nbsp;<input type="number" name="edad" id="edad" min="1" max="100" step="5" placeholder="multiplos de 5" > <br/>
+Rango:&nbsp;<input type="range" name="rango"><br/>
+Fecha&nbsp;<input type="date"> <br/><br/>
+Telefono:&nbsp;<input type="tel" list="telefonos"><br/><br/>
+<input type="radio" name="idioma" value="Inglés">Inglés<br/>
+<input type="radio" name="idioma" value="Alemán">Alemán<br/>
+<input type="radio" name="idioma" value="Italiano">Italiano<br/>
+<input type="submit" name="enviar" value="enviar">
+</form>
+
+</section>
+
+</body>
+</html>
